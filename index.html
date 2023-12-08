@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imgaes/favicon.ico">
+    <title>Game Of Throns</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="but">
+    <button onclick=" userMove='Rock';generateComputerMove();">
+        <img src="Imgaes/rock.png" alt="rock">
+    </button>
+    <button onclick=" userMove='Paper'; generateComputerMove();">
+        <img src="Imgaes\paper.png" alt="paper">
+    </button>
+    <button onclick=" userMove='Scissors'; generateComputerMove();">
+        <img src="Imgaes/scissors.png" alt="scissors">
+    </button>
+    <button id="reset" onclick=" resetResult(); ">
+        <img src="Imgaes/reset.jpg" alt="lizard">
+    </button>
+    <h1>Game Summary</h1>
+    <table>
+    </div>
+        <tr>
+            <th>Win</th>
+            <th>Loose</th>
+            <th>Ties</th>
+            <th>Game Played</th>
+        </tr>
+        <tr>
+            <td id="win">0</td>
+            <td id="lose">0</td>
+            <td id="tie">0</td>
+            <td id="to">0</td>
+        </tr>
+    </table>
+    <h1>Game History</h1>
+    <table id="gamehistory">
+
+    </table>
+    <script src="rps.js"></script>
+</body>
+</html>
